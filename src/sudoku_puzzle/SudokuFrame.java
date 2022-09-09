@@ -33,13 +33,7 @@ public class SudokuFrame extends JFrame {
 		JMenuItem nineByNineGame = new JMenuItem("9 By 9 Game");
 		nineByNineGame.addActionListener(new NewGameListener(SudokuPuzzleType.NINEBYNINE,22));
 		
-		/*
-		 * need to include this when solving algorithm is improved
-		 JMenuItem sixteenBySizteenGame = new JMenuItem("16 By 16 Game");
-		sixteenBySizteenGame.addActionListener(new NewGameListener(SudokuPuzzleType.SIXTEENBYSIXTEEN,16));
-		*/
 		newGame.add(nineByNineGame);
-		//newGame.add(sixteenBySizteenGame);
 		file.add(newGame);
 		menuBar.add(file);
 		this.setJMenuBar(menuBar);
