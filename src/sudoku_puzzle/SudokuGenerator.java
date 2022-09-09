@@ -20,7 +20,6 @@ public class SudokuGenerator {
 			notUsedValidValues.remove(randomValue);
 		}
 		
-		//Bottleneck here need to improve this so that way 16x16 puzzles can be generated
 		backtrackSudokuSolver(0, 0, copy);
 		
 		int numberOfValuesToKeep = (int)(0.22222*(SudokuPanel.GRID_SIZE*SudokuPanel.GRID_SIZE));
